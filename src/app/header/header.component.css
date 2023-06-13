@@ -1,0 +1,11 @@
+header {
+    background-color: #fff;
+    padding: 0;
+    border-bottom: 1px solid #aa0000;
+}
+a {
+    color: #af1313;
+}
+a:hover {
+    color: #e72929;
+}
