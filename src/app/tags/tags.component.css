@@ -1,0 +1,28 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+a {
+    background-color: #a8dadc;
+    color: blue;
+    padding: .4rem;
+    margin: 1rem;
+    border-radius: 10rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-items: center;
+    font-style: italic;
+    font-weight: 800;
+    font-size: .8rem;
+}
+a:hover {
+    background-color: #95edf0;
+    color: blue;
+    padding: .4rem;
+    margin: 1rem;
+    border-radius: 10rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    align-items: center;
+    font-style: italic;
+    font-weight: 800;
+    font-size: .8rem;
+}

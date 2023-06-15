@@ -9,3 +9,20 @@ a {
 a:hover {
     color: #e72929;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li a {
+    padding: 1rem;
+}
+a.logo {
+    font-weight: bold;
+    padding: 1rem;
+}

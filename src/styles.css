@@ -7,10 +7,16 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Quicksand, sans-serif;
     font-size: 18px;
+}
+
+html {
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
