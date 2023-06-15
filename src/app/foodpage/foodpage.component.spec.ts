@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FoodPageComponent } from './food-page.component';
+import { FoodpageComponent } from './foodpage.component';
 
-describe('FoodPageComponent', () => {
-  let component: FoodPageComponent;
-  let fixture: ComponentFixture<FoodPageComponent>;
+describe('FoodpageComponent', () => {
+  let component: FoodpageComponent;
+  let fixture: ComponentFixture<FoodpageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FoodPageComponent]
+      declarations: [FoodpageComponent]
     });
-    fixture = TestBed.createComponent(FoodPageComponent);
+    fixture = TestBed.createComponent(FoodpageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

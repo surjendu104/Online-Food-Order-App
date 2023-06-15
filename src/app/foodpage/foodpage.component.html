@@ -1,0 +1,31 @@
+<div class="container">
+    <img [src]="food.imageUrl" [alt]="food.name">
+    <div class="details">
+        <div class="header">
+            <span class="name">{{food.name}}</span>
+            <span class="favorite" *ngIf="food.favoriate === true"><i class="bi bi-heart-fill"></i></span>
+            <span class="favorite" *ngIf="food.favoriate === false"><i class="bi bi-heart"></i></span>
+        </div>
+
+        <div class="star">
+
+            <ngb-rating [max]="5" [(rate)]="food.stars" [readonly]="true"></ngb-rating>
+        </div>
+
+        <div class="origins">
+            <span *ngFor="let origin of food.origins">{{origin}}</span>
+        </div>
+        <div class="tag">
+            <app-tags [foodPageTags]="food.tag" justifyContent="start"></app-tags>
+        </div>
+        <div class="cook-time">
+            <span>
+                Time to cook about <strong>{{food.cookTime}}</strong> Minutes
+            </span>
+        </div>
+        <div class="price">
+            <span>{{food.price | currency:'INR'}}</span>
+        </div>
+        <button (click)="addToCart()">ADD To Cart</button>
+    </div>
+</div>

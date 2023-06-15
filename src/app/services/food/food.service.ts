@@ -6,7 +6,7 @@ import { Foods } from 'src/app/shared/models/food';
   providedIn: 'root'
 })
 export class FoodService {
-  
+
 
   constructor() { }
 
@@ -19,17 +19,17 @@ export class FoodService {
         favoriate: false,
         stars: 4.2,
         tag: ['fast food', 'italy', 'pizza', 'lunch'],
-        imageUrl: 'assets/images/img1.jpg',
+        imageUrl: '/assets/images/img1.jpg',
         cookTime: '40-50',
         origins: ['Italy', 'Belgium', 'Europe']
       },
       {
-        id: 12,
+        id: 2,
         price: 250,
         name: 'Burgure',
         favoriate: true,
         stars: 3.0,
-        tag: ['fast food','pizza'],
+        tag: ['fast food', 'pizza'],
         imageUrl: 'assets/images/img2.jpg',
         cookTime: '20-40',
         origins: ['italy', 'Amerian']
@@ -51,7 +51,7 @@ export class FoodService {
         name: 'Pasta',
         favoriate: true,
         stars: 2.2,
-        tag: ['fast food', 'italy','breakfast'],
+        tag: ['fast food', 'italy', 'breakfast'],
         imageUrl: 'assets/images/img4.jpg',
         cookTime: '10-20',
         origins: ['italy', 'Poland']
@@ -91,27 +91,27 @@ export class FoodService {
       }
     ]
   }
-  
+
   getAllFoodByTag(stag: string): Foods[] {
-    return stag=='All'?this.getAll():this.getAll().filter(food=>food.tag?.includes(stag.toLowerCase()))
+    return stag == 'All' ? this.getAll() : this.getAll().filter(food => food.tag?.includes(stag.toLowerCase()))
   }
 
-  getAllTag():Tag[] {
+  getAllTag(): Tag[] {
     return [
-      {name:'All', count:7},
-      {name:'Pizza', count:2},
-      {name:'Cake', count:2},
-      {name:'Juice', count:1},
-      {name:'Lunch', count:2},
-      {name:'Strawberry', count:1},
-      {name:'Indian', count:1},
-      {name:'Breakfast', count:2},
-      {name:'Drinks', count:1},
+      { name: 'All', count: 7 },
+      { name: 'Pizza', count: 2 },
+      { name: 'Cake', count: 2 },
+      { name: 'Juice', count: 1 },
+      { name: 'Lunch', count: 2 },
+      { name: 'Strawberry', count: 1 },
+      { name: 'Indian', count: 1 },
+      { name: 'Breakfast', count: 2 },
+      { name: 'Drinks', count: 1 },
     ]
   }
 
-  getFoodById(id:number):Foods {
-    return this.getAll().find(food=>food.id===id)!;
+  getFoodById(id: number): Foods {
+    return this.getAll().find(food => food.id == id)!;
   }
 }
 
